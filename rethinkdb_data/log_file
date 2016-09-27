@@ -1,0 +1,53 @@
+2016-09-26T00:22:52.036359000 0.010659s notice: In recursion: removing file 'C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data\\tmp'
+2016-09-26T00:22:52.036359001 0.011037s warn: Trying to delete non-existent file 'C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data\\tmp'
+2016-09-26T00:22:52.037362300 0.011832s notice: Initializing directory C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data
+2016-09-26T00:22:52.037863500 0.012299s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory 'C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data' did not already exist or is empty.)
+2016-09-26T00:22:52.037863501 0.012327s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2016-09-26T00:22:52.039346600 0.013592s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2016-09-26T00:22:52.039346601 0.013616s notice: Loading data from directory C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data
+2016-09-26T00:22:52.182599300 0.157299s info: Automatically using cache size of 2469 MB
+2016-09-26T00:22:52.184101700 0.158471s notice: Listening for intracluster connections on port 29015
+2016-09-26T00:22:52.184603200 0.159216s notice: Listening for client driver connections on port 28015
+2016-09-26T00:22:52.184603201 0.159301s notice: Listening for administrative HTTP connections on port 8080
+2016-09-26T00:22:52.184603202 0.159303s notice: Listening on cluster address: 127.0.0.1
+2016-09-26T00:22:52.185104400 0.159306s notice: Listening on driver address: 127.0.0.1
+2016-09-26T00:22:52.185104401 0.159306s notice: Listening on http address: 127.0.0.1
+2016-09-26T00:22:52.185104402 0.159307s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-09-26T00:22:52.185104403 0.159309s notice: Server ready, "Brian_PC_8ns" 66e628ef-4da4-45c2-9428-9ace28e69c71
+2016-09-26T00:24:16.318582100 84.292866s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Starting a new Raft election for term 1.
+2016-09-26T00:24:16.318582101 84.293201s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Added replica on this server.
+2016-09-26T00:24:16.320586800 84.294937s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: This server is Raft leader for term 1. Latest log index is 0.
+2016-09-26T00:25:11.491240600 139.465645s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: Starting a new Raft election for term 1.
+2016-09-26T00:25:11.491240601 139.465746s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: Added replica on this server.
+2016-09-26T00:25:11.493247700 139.467454s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: This server is Raft leader for term 1. Latest log index is 0.
+2016-09-26T00:25:30.165288300 158.139631s info: Table c030676e-e368-4168-aa45-a596a19de1b8: Starting a new Raft election for term 1.
+2016-09-26T00:25:30.165288301 158.139770s info: Table c030676e-e368-4168-aa45-a596a19de1b8: Added replica on this server.
+2016-09-26T00:25:30.166793700 158.141468s info: Table c030676e-e368-4168-aa45-a596a19de1b8: This server is Raft leader for term 1. Latest log index is 0.
+2016-09-26T02:17:42.470457000 6890.444757s notice: Server got Control-C; shutting down...
+2016-09-26T02:17:42.470959100 6890.445620s notice: Shutting down client connections...
+2016-09-26T02:17:42.473966500 6890.448265s notice: All client connections closed.
+2016-09-26T02:17:42.473966501 6890.448279s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-09-26T02:17:42.506553900 6890.480991s notice: Storage engine shut down.
+2016-09-26T02:23:35.077697500 0.009377s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2016-09-26T02:23:35.077697501 0.009511s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2016-09-26T02:23:35.078199000 0.009924s notice: Loading data from directory C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data
+2016-09-26T02:23:35.086220300 0.017708s info: Automatically using cache size of 2470 MB
+2016-09-26T02:23:35.087223000 0.019010s notice: Listening for intracluster connections on port 29015
+2016-09-26T02:23:35.103267100 0.034778s notice: Listening for client driver connections on port 28015
+2016-09-26T02:23:35.103267101 0.034933s notice: Listening for administrative HTTP connections on port 8080
+2016-09-26T02:23:35.103267102 0.034935s notice: Listening on cluster address: 127.0.0.1
+2016-09-26T02:23:35.103267103 0.034992s notice: Listening on driver address: 127.0.0.1
+2016-09-26T02:23:35.103267104 0.034993s notice: Listening on http address: 127.0.0.1
+2016-09-26T02:23:35.103267105 0.034994s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-09-26T02:23:35.103267106 0.034995s notice: Server ready, "Brian_PC_8ns" 66e628ef-4da4-45c2-9428-9ace28e69c71
+2016-09-26T02:23:36.615286700 1.546848s info: Table c030676e-e368-4168-aa45-a596a19de1b8: Starting a new Raft election for term 2.
+2016-09-26T02:23:36.620300000 1.552017s info: Table c030676e-e368-4168-aa45-a596a19de1b8: This server is Raft leader for term 2. Latest log index is 2.
+2016-09-26T02:23:36.817825900 1.749680s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Starting a new Raft election for term 2.
+2016-09-26T02:23:36.821334500 1.753109s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: This server is Raft leader for term 2. Latest log index is 2.
+2016-09-26T02:23:37.073505300 2.004982s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: Starting a new Raft election for term 2.
+2016-09-26T02:23:37.075009200 2.006716s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: This server is Raft leader for term 2. Latest log index is 2.
+2016-09-26T02:41:07.570864800 1052.502290s notice: Server got Control-C; shutting down...
+2016-09-26T02:41:07.570864801 1052.502559s notice: Shutting down client connections...
+2016-09-26T02:41:07.571366000 1052.502757s notice: All client connections closed.
+2016-09-26T02:41:07.571366001 1052.502771s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-09-26T02:41:07.592422000 1052.524002s notice: Storage engine shut down.
