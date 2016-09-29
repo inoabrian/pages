@@ -1,0 +1,28 @@
+<section class="jumbotron text-xs-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Team Pages</h1>
+    <p class="lead text-muted">
+      Internal team pages for UPS
+    </p>
+    <p>
+      <input type="text" name="search" class="form-control" (input)="search$.next($event.target.value)" [(ngModel)]="searchTeam" placeholder="Search Teams">
+    </p>
+  </div>
+</section>
+
+<div class="album text-muted">
+  <div class="container">
+
+    <div *ngIf="loading" class="loader">
+
+    </div>
+
+    <div *ngIf="!loading" class="row">
+      <div class="card" *ngFor="let team of teams">
+        <img data-src="holder.js/100px280/thumb" alt="100%x280" [src]="team.teamBackgroundImage" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
+        <p class="card-text">{{team.teamName}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

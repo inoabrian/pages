@@ -1,0 +1,25 @@
+<div *ngIf="_pservice.cachedData" class="container">
+  <div class="col-lg-3" style="margin-top: 10px;">
+    <a>
+      <img>
+    </a>
+    <div class="v-card-names">
+      <h1>
+        <span></span>
+        <span></span>
+      </h1>
+    </div>
+    <div class="user-profile-bio">
+      <div>
+        Bio information here.
+        {{_pservice.cachedData.user | json}}
+      </div>
+      <div class="btn btn-default">Edit</div>
+    </div>
+  </div>
+  <div class="col-lg-9">
+    <h6>
+      RIGHT SIDE
+    </h6>
+  </div>
+</div>

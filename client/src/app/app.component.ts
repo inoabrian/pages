@@ -1,31 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
 import { RouterOutlet } from '@angular/router';
 import 'rxjs/RX';
+
+import { ProfileService } from './shared';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   private searchTeam: string = '';
   private searching: boolean = false;
   private teams: any = [];
+  private user: any = {};
 
-  constructor(private http: Http) {
-    this.teams = [
-      { 
-        "createdDate": "2016-09-26T06:11:59.852Z", 
-        "id": "2a16415d-7549-422e-a59a-2ebc71bae758", 
-        "teamActive": true, 
-        "teamBackgroundImage": "http://inoabrian.com/photo_1.jpg", 
-        "teamMembers": ["5afaa46f-59aa-4a84-968b-e2424af5290f"], 
-        "teamName": "Not - Telematics", 
-        "teamProjects": ["SSP", "Autotel", "ORSA", "MTA"], 
-        "teamTechStack": "" 
-      }
-    ];
+  constructor(private http: Http, private _pservice: ProfileService) {
+  }
+
+  ngOnInit() {
+    if (this._pservice.cachedData !== null) {
+      this.user = this._pservice.cachedData.user;
+    }else {
+      this._pservice.getUser('5afaa46f-59aa-4a84-968b-e2424af5290f');
+    }
   }
 
   searchChanged(event){

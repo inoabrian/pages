@@ -45,7 +45,7 @@ module.exports = () => {
           r.table(this.tableName)
             .run(conn)
             .then(cursor => {
-              cursor.toArray()
+                cursor.toArray()
                 .then(teams => done(null, teams))
                 .error(err => done(err))
               ;
@@ -53,6 +53,25 @@ module.exports = () => {
             .error(err => done(err))
           ;
         });
+    },
+    search(filterString, done){
+      r.connect(config.rethinkdb)
+        .then(conn => {
+          r.table(this.tableName)
+            .filter(team => {
+              return team('teamName').match(filterString);
+            })
+            .run(conn)
+            .then(teams => {
+              teams.toArray()
+              .then(teams => done(null, teams))
+              .error(err => done(err))
+            })
+            .error(err => done(err))
+            ;
+        })
+        .error(err => done(err))
+        ;
     },
     get(teamId, done) {
       r.connect(config.rethinkdb)

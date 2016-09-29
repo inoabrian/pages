@@ -1,12 +1,31 @@
 module.exports = app => {
   const Teams = app.models.teams;
 
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
+  app.get('/teams/search/:searchString', (req, res) => {
+    const { searchString } = req.params;
+    console.log(searchString);
+    Teams.search(searchString, (err, teams) => {
+      if(err) {
+        return res.status(412).json(err);
+      }
+      console.log(`Searching for ${searchString}`);
+      console.log(teams);
+      return res.json(teams);
+    })
+  });
+
   app.get('/teams', (req, res) => {
     Teams.list((err, users) => {
       if (err) {
         return res.status(412).json(err);
       }
-      sonsole.log('request coming in for teams');
+      console.log('request coming in for teams');
       return res.json(users);
     });
   });
