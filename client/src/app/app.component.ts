@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
-import "rxjs/RX";
+import { RouterOutlet } from '@angular/router';
+import 'rxjs/RX';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,11 @@ import "rxjs/RX";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private searchTeam :string = '';
-  private searching :boolean = false;
-  private teams :any = [];
+  private searchTeam: string = '';
+  private searching: boolean = false;
+  private teams: any = [];
 
-  constructor(private http : Http){
+  constructor(private http: Http) {
     this.teams = [
       { 
         "createdDate": "2016-09-26T06:11:59.852Z", 
@@ -28,12 +29,13 @@ export class AppComponent {
   }
 
   searchChanged(event){
-    if(event === ""){
+    this.searchTeam = event;
+    if(event === '') {
       this.searching = false;
       return;
     }
     this.searching = true;
-    this.http.get("http://localhost:3000/teams")
+    this.http.get('http://localhost:3000/teams')
     .map(res => {
       res.json();
     })
