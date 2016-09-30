@@ -98,3 +98,24 @@
 2016-09-28T22:50:41.116387300 3.638219s info: Table c030676e-e368-4168-aa45-a596a19de1b8: This server is Raft leader for term 4. Latest log index is 9.
 2016-09-28T22:50:41.478408000 3.999471s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Starting a new Raft election for term 4.
 2016-09-28T22:50:41.656418200 4.177473s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: This server is Raft leader for term 4. Latest log index is 9.
+2016-09-29T15:11:26.944941700 0.070339s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2016-09-29T15:11:26.959942500 0.085001s notice: Running on 6.1.7601 (Windows 7, Server 2008 R2)
+2016-09-29T15:11:26.959942501 0.085196s notice: Loading data from directory C:\\Users\\SPZ0KKD\\Documents\\Development\\pages\\rethinkdb_data
+2016-09-29T15:11:27.096950400 0.221741s info: Automatically using cache size of 2002 MB
+2016-09-29T15:11:29.482086800 2.607464s notice: Listening for intracluster connections on port 29015
+2016-09-29T15:11:29.619094600 2.744173s notice: Listening for client driver connections on port 28015
+2016-09-29T15:11:29.619094601 2.744605s notice: Listening for administrative HTTP connections on port 8080
+2016-09-29T15:11:29.619094602 2.744674s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-09-29T15:11:29.619094603 2.744676s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-09-29T15:11:29.619094604 2.744677s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-09-29T15:11:29.620094700 2.744690s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-09-29T15:11:29.620094701 2.744691s notice: Server ready, "Brian_PC_8ns" 66e628ef-4da4-45c2-9428-9ace28e69c71
+2016-09-29T15:11:30.173126300 3.297710s error: worker process failed to resynchronize with main process
+2016-09-29T15:11:30.173126301 3.297719s warn: failed to kill worker process: Access is denied.
+2016-09-29T15:11:30.173126302 3.297723s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2016-09-29T15:11:30.787161400 3.911956s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Starting a new Raft election for term 5.
+2016-09-29T15:11:30.840164500 3.965357s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: This server is Raft leader for term 5. Latest log index is 12.
+2016-09-29T15:11:30.843164600 3.967917s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: Starting a new Raft election for term 5.
+2016-09-29T15:11:30.944170400 4.069271s info: Table 78a06a73-d96c-4156-bed4-1cf43d454c38: This server is Raft leader for term 5. Latest log index is 13.
+2016-09-29T15:11:31.286190000 4.410852s info: Table c030676e-e368-4168-aa45-a596a19de1b8: Starting a new Raft election for term 5.
+2016-09-29T15:11:31.409197000 4.534483s info: Table c030676e-e368-4168-aa45-a596a19de1b8: This server is Raft leader for term 5. Latest log index is 12.

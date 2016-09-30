@@ -24,14 +24,12 @@ export class HomeService {
     }
 
     search(queryString: string) {
-        let search = new URLSearchParams();
-        search.set('action', 'opensearch');
-        search.set('search', queryString);
-        search.set('format', 'json');
-
-        console.log(queryString);
-
-        return this.http.get(`http://localhost:3000/teams/search/${queryString}`)
-            .map(res => res.json());
+        if (queryString !== '') {
+            return this.http.get(`http://localhost:3000/teams/search/${queryString.toLowerCase()}`)
+                .map(res => res.json());
+        }else {
+            return this.http.get('http://localhost:3000/teams')
+                .map(res => { return res.json(); });
+        }
     }
 }

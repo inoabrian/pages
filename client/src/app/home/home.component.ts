@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   loading: boolean = true;
   teams: any = [{}, {}, {}, {}];
   search$: Subject<string> = new Subject<string>();
+  size: any = {col6: false, col4: true};
 
   constructor(private _hservice: HomeService) {
     this.search$.subscribe(query => this.searchTeams(query))
@@ -37,6 +38,15 @@ export class HomeComponent implements OnInit {
     .subscribe(data => {
       this.teams = data;
     });
+  }
+
+  setCol(size: number) {
+    this.size[`col${size}`] = true;
+    if (size === 6) {
+      this.size.col4 = false;
+    }else {
+      this.size.col6 = false;
+    }
   }
 
 }

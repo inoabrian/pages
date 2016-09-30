@@ -1,5 +1,6 @@
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  /*min-height: 75rem;  Can be removed; just added for demo purposes */
+  height: 100%;
 }
 
 .navbar {

@@ -59,7 +59,7 @@ module.exports = () => {
         .then(conn => {
           r.table(this.tableName)
             .filter(team => {
-              return team('teamName').match(filterString);
+              return team('teamName').downcase().match(filterString);
             })
             .run(conn)
             .then(teams => {

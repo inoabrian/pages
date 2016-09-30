@@ -39,3 +39,41 @@
     transform: rotate(360deg);
   }
 }
+
+.jumbotron{
+  padding-top: 0px;
+}
+
+.jumbotron-heading{
+  color: #EF8354;
+}
+
+.card-header{
+  padding: 0.35rem 1rem;
+  background-color: #FFF;
+  color: #E67F0D;
+  font-weight: bolder;
+}
+
+.card-header, a{
+  color: #E67F0D;
+}
+
+.card{
+  padding: 0px;
+  border: solid 1px #C2CCF7;
+  width: 100%;
+  background-color: transparent;
+}
+
+.size-selectors{
+  color: #EF8354;
+}
+
+.size-selectors:active{
+  color: #c64d18;
+}
+
+.size-selectors.active, .size-selectors:active {
+  color: #c64d18;
+}

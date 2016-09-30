@@ -16,11 +16,44 @@
     <div *ngIf="loading" class="loader">
 
     </div>
-
+    <div class="row" style="margin-top: 0px; margin-bottom: 15px;">
+      <div class="pull-right text-right">
+        <a class="size-selectors btn btn-sm btn-default" href="javascript:void(0)" (click)="setCol(6)" [attr.active]="size.col6" [ngClass]="{'active' : size.col6}">
+           <i class="fa fa-th-large"></i>
+        </a>
+        <a class="size-selectors btn btn-sm btn-default" href="javascript:void(0)" (click)="setCol(4)" [attr.active]="size.col4" [ngClass]="{'active' : size.col4}">
+          <i class="fa fa-th"></i>
+        </a>
+      </div>
+    </div>
     <div *ngIf="!loading" class="row">
-      <div class="card" *ngFor="let team of teams">
-        <img data-src="holder.js/100px280/thumb" alt="100%x280" [src]="team.teamBackgroundImage" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">
-        <p class="card-text">{{team.teamName}}</p>
+      <div *ngFor="let team of teams" [ngClass]="{ 'col-xs-6': size.col6, 'col-xs-4': size.col4 }">
+        <div class="card">
+          <div class="card-header">
+            {{team.teamName}}
+            <a href="javascript:void(0)"><i class="fa fa-share pull-right" style="padding-top: 5px;"></i></a>
+          </div>
+          <!--<img data-src="holder.js/100px280/thumb" alt="100%x280" [src]="team.teamBackgroundImage" data-holder-rendered="true" style="height: 280px; width: 100%; display: block;">-->
+          <div class="card-block">
+            <h6>Team Members:</h6>
+            <div class="col-xs-3" *ngFor="let member of team.teamMembers">
+              <figure class="figure">
+                <img [src]="team.teamBackgroundImage" height="50px" alt="..." class="img-rounded">
+                <figcaption class="figure-caption" style="font-size: 70%; text-align: center;">
+                  First Last
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="card-block">
+            <h6>Tech Stack:</h6>
+            <div class="col-xs-3" *ngFor="let tech of team.teamTechStack">
+              <span class="tag tag-default">
+                {{tech.toUpperCase()}}
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
