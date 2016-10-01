@@ -23,7 +23,13 @@ export class HomeService {
         });
     }
 
-    search(queryString: string) {
+    search (terms: Observable<string>, debounceMs = 400){
+        return terms.debounceTime(debounceMs)
+        .distinctUntilChanged()
+        .switchMap(query => this.searchRaw(query));
+    }
+
+    searchRaw (queryString: string) {
         if (queryString !== '') {
             return this.http.get(`http://localhost:3000/teams/search/${queryString.toLowerCase()}`)
                 .map(res => res.json());

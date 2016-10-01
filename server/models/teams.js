@@ -43,6 +43,9 @@ module.exports = () => {
       r.connect(config.rethinkdb)
         .then(conn => {
           r.table(this.tableName)
+            .filter(team => {
+              return team('teamActive').eq(true)
+            })
             .run(conn)
             .then(cursor => {
                 cursor.toArray()
@@ -59,7 +62,10 @@ module.exports = () => {
         .then(conn => {
           r.table(this.tableName)
             .filter(team => {
-              return team('teamName').downcase().match(filterString);
+              return team('teamName').downcase().match(filterString)
+                    .or(team('teamTechStack').contains(function(stack){
+                      return stack.downcase().match(filterString)
+                    }))
             })
             .run(conn)
             .then(teams => {
