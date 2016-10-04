@@ -61,11 +61,19 @@ module.exports = () => {
       r.connect(config.rethinkdb)
         .then(conn => {
           r.table(this.tableName)
+            // .filter(team => {
+            //   return team('teamName').downcase().match(filterString)
+            //         .or(team('teamTechStack').contains(function(stack){
+            //           return stack.downcase().match(filterString)
+            //         }))
+            // })
             .filter(team => {
-              return team('teamName').downcase().match(filterString)
-                    .or(team('teamTechStack').contains(function(stack){
-                      return stack.downcase().match(filterString)
-                    }))
+              return team('teamName').downcase().match('r')
+                      .or(
+                        team('teamTechStack').contains(function(stack){
+                              return stack("tech").downcase().match('r');
+                        })
+                      )
             })
             .run(conn)
             .then(teams => {
