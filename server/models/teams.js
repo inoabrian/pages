@@ -68,10 +68,10 @@ module.exports = () => {
             //         }))
             // })
             .filter(team => {
-              return team('teamName').downcase().match('r')
+              return team('teamName').downcase().match(filterString)
                       .or(
                         team('teamTechStack').contains(function(stack){
-                              return stack("tech").downcase().match('r');
+                              return stack("tech").downcase().match(filterString);
                         })
                       )
             })

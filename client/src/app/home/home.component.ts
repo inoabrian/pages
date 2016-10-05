@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeService } from './home.service';
 import { Subject } from 'rxjs/Subject';
+import { HomeCardComponent } from './home_card/homecard.component';
 
 import 'rxjs/Rx';
 
@@ -14,6 +15,7 @@ export class HomeComponent implements OnInit {
   teams: any = [{}, {}, {}, {}];
   search$: Subject<string> = new Subject<string>();
   size: any = {col6: false, col4: true};
+  colSize: string = "col-xs-4";
 
   constructor(private _hservice: HomeService) {
     this._hservice.search(this.search$)
@@ -39,8 +41,10 @@ export class HomeComponent implements OnInit {
     this.size[`col${size}`] = true;
     if (size === 6) {
       this.size.col4 = false;
+      this.colSize = "col-xs-6";
     }else {
       this.size.col6 = false;
+      this.colSize = "col-xs-4";
     }
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Team } from './card.interface';
 import 'rxjs/Rx';
 
 @Component({
@@ -7,15 +8,32 @@ import 'rxjs/Rx';
   styleUrls: ['./homecard.component.css']
 })
 export class HomeCardComponent implements OnInit {
-  loading: boolean = true;
   teams: any = [{}, {}, {}, {}];
-  size: any = {col6: false, col4: true};
+  colClass: any = "col-xs-4";
 
   @Output() view = new EventEmitter();
 
-  @Input() set team(team:)
+  @Input() set col (col: string){
+    if(col != null){
+      this.colClass = col;
+    }
+  } 
+
+  @Input() set team (teams: Team){
+    if (teams != null) {
+      this.teams = teams;
+    }
+  }
 
   constructor() {
    
+  }
+
+  ngOnInit(){
+    console.log("home card init.");
+  }
+
+  viewTeam(data){
+    console.info(data);
   }
 }

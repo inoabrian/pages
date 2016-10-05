@@ -181,3 +181,60 @@
 2016-10-04T17:26:41.422524000 62486.366363s notice: All client connections closed.
 2016-10-04T17:26:41.422524001 62486.366375s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2016-10-04T17:26:45.423524000 62490.367877s notice: Storage engine shut down.
+2016-10-04T22:21:54.540281200 0.007686s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2016-10-04T22:21:54.540281201 0.007796s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2016-10-04T22:21:54.540782700 0.008043s notice: Loading data from directory C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data
+2016-10-04T22:21:54.566575300 0.034050s info: Automatically using cache size of 2530 MB
+2016-10-04T22:21:54.568078800 0.035175s notice: Listening for intracluster connections on port 29015
+2016-10-04T22:21:54.588132500 0.055354s notice: Listening for client driver connections on port 28015
+2016-10-04T22:21:54.588132501 0.055457s notice: Listening for administrative HTTP connections on port 8080
+2016-10-04T22:21:54.588132502 0.055544s notice: Listening on cluster address: 127.0.0.1
+2016-10-04T22:21:54.588132503 0.055545s notice: Listening on driver address: 127.0.0.1
+2016-10-04T22:21:54.588132504 0.055545s notice: Listening on http address: 127.0.0.1
+2016-10-04T22:21:54.588132505 0.055546s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-04T22:21:54.588132506 0.055547s notice: Server ready, "Brian_PC_8ns" 66e628ef-4da4-45c2-9428-9ace28e69c71
+2016-10-04T22:21:56.129119100 1.596358s info: Table 37ee1107-74ac-40d9-974e-99b153f9effd: Starting a new Raft election for term 2.
+2016-10-04T22:21:56.133633300 1.601136s info: Table 37ee1107-74ac-40d9-974e-99b153f9effd: This server is Raft leader for term 2. Latest log index is 3.
+2016-10-04T22:21:56.335447100 1.802668s error: Ignoring missing branch `73801f22-265f-4b85-bd94-ec03189d02c4`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447101 1.802677s error: Ignoring missing branch `dbf93f6b-1c15-4cd9-82aa-0e35030efcb0`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447102 1.802679s error: Ignoring missing branch `dbfc588f-9585-4ff0-b7f1-f4d306860bae`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447103 1.802681s error: Ignoring missing branch `ef7b860e-795f-4052-9b53-38a123866b6e`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447104 1.802683s error: Ignoring missing branch `2f94eff9-0ebe-465a-94a4-17ec9f26f9d7`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447105 1.802685s error: Ignoring missing branch `5f9fa987-f6ba-4e3c-83a8-3e46d56d4472`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447106 1.802687s error: Ignoring missing branch `1db51d34-b16b-47c5-81cc-0d2143361152`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.335447107 1.802689s error: Ignoring missing branch `187f8387-ea04-48cd-97f1-978c4b53bde4`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T22:21:56.349483000 1.816702s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Starting a new Raft election for term 8.
+2016-10-04T22:21:56.355498700 1.822641s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: This server is Raft leader for term 8. Latest log index is 22.
+2016-10-04T22:21:56.555091200 2.022310s info: Table c030676e-e368-4168-aa45-a596a19de1b8: Starting a new Raft election for term 8.
+2016-10-04T22:21:56.557597400 2.024927s info: Table c030676e-e368-4168-aa45-a596a19de1b8: This server is Raft leader for term 8. Latest log index is 23.
+2016-10-04T23:00:02.087877100 2287.555791s notice: Server got Control-C; shutting down...
+2016-10-04T23:00:02.088840900 2287.556106s notice: Shutting down client connections...
+2016-10-04T23:00:02.088840901 2287.556694s notice: All client connections closed.
+2016-10-04T23:00:02.088840902 2287.556699s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-10-04T23:00:02.098867000 2287.566621s notice: Storage engine shut down.
+2016-10-04T23:00:08.572396700 0.007970s notice: Running rethinkdb 2.3.5-windows (MSC 190023506)...
+2016-10-04T23:00:08.572396701 0.008161s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2016-10-04T23:00:08.573400200 0.008709s notice: Loading data from directory C:\\Users\\Brian\\Documents\\Development\\pages\\rethinkdb_data
+2016-10-04T23:00:08.579415300 0.015171s info: Automatically using cache size of 3218 MB
+2016-10-04T23:00:08.580418000 0.016139s notice: Listening for intracluster connections on port 29015
+2016-10-04T23:00:08.599468700 0.034512s notice: Listening for client driver connections on port 28015
+2016-10-04T23:00:08.599468701 0.034687s notice: Listening for administrative HTTP connections on port 8080
+2016-10-04T23:00:08.599468702 0.034689s notice: Listening on cluster address: 127.0.0.1
+2016-10-04T23:00:08.599468703 0.034689s notice: Listening on driver address: 127.0.0.1
+2016-10-04T23:00:08.599468704 0.034690s notice: Listening on http address: 127.0.0.1
+2016-10-04T23:00:08.599468705 0.034691s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-10-04T23:00:08.599468706 0.034691s notice: Server ready, "Brian_PC_8ns" 66e628ef-4da4-45c2-9428-9ace28e69c71
+2016-10-04T23:00:09.617898400 1.053146s info: Table 37ee1107-74ac-40d9-974e-99b153f9effd: Starting a new Raft election for term 3.
+2016-10-04T23:00:09.621941500 1.057687s info: Table 37ee1107-74ac-40d9-974e-99b153f9effd: This server is Raft leader for term 3. Latest log index is 6.
+2016-10-04T23:00:09.824241300 1.259493s error: Ignoring missing branch `bb322608-b484-4936-9c50-bb48acb95ec5`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241301 1.259514s error: Ignoring missing branch `53207b51-6c83-401e-8783-c77d5b840d81`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241302 1.259517s error: Ignoring missing branch `2139e056-7603-4be8-a458-d2e2e5e3c27c`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241303 1.259522s error: Ignoring missing branch `c8b97776-d638-4996-8ab8-9aab8812e913`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241304 1.259527s error: Ignoring missing branch `42faa5d9-27fc-4c49-bb85-65f9d41fbb06`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241305 1.259532s error: Ignoring missing branch `d9d9648c-14e5-4c30-8373-7b89ca519991`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241306 1.259536s error: Ignoring missing branch `d521ec01-b858-436d-bffa-1ee4952411e0`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:09.824241307 1.259541s error: Ignoring missing branch `1504733c-a7b5-4b75-a25d-7842379e5486`. This probably means that there is a bug in RethinkDB. Please report this at https://github.com/rethinkdb/rethinkdb/issues/
+2016-10-04T23:00:10.030097000 1.465234s info: Table c030676e-e368-4168-aa45-a596a19de1b8: Starting a new Raft election for term 9.
+2016-10-04T23:00:10.033130700 1.468999s info: Table c030676e-e368-4168-aa45-a596a19de1b8: This server is Raft leader for term 9. Latest log index is 26.
+2016-10-04T23:00:10.262279600 1.697420s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: Starting a new Raft election for term 9.
+2016-10-04T23:00:10.264284900 1.699952s info: Table 697dc8df-17bf-4e53-bb30-08259d3a27c6: This server is Raft leader for term 9. Latest log index is 25.
