@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { HomeCardComponent } from './home/home_card/homecard.component';
+import { TeamComponent } from './team/team.component';
 
 import { HomeService } from './home/home.service';
+import { TeamService } from './team/team.service';
 import { ProfileService } from './shared';
 
 @NgModule({
   declarations: [
-    AppComponent, ProfileComponent, HomeComponent, HomeCardComponent
+    AppComponent, ProfileComponent, HomeComponent, HomeCardComponent, TeamComponent
   ],
   imports: [
     applicationRouting,
@@ -26,7 +28,8 @@ import { ProfileService } from './shared';
   ],
   providers: [
     ProfileService,
-    HomeService
+    HomeService,
+    TeamService
   ],
   bootstrap: [AppComponent]
 })

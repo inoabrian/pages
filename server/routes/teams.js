@@ -30,9 +30,9 @@ module.exports = app => {
     });
   });
 
-  app.get('/teams/:userId', (req, res) => {
-    const { userId } = req.params;
-    Teams.get(userId, (err, user) => {
+  app.get('/teams/:teamID', (req, res) => {
+    const { teamID } = req.params;
+    Teams.get(teamID, (err, user) => {
       if (err) {
         return res.status(412).json(err);
       }

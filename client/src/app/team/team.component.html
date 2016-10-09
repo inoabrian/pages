@@ -1,3 +1,33 @@
-<p>
-  team works!
-</p>
+<div *ngIf="loading" class="loader"></div>
+
+<div *ngIf="!loading">
+  <div class="main">
+    <div class="teamName">
+      <span class="logo">
+        <img class="img-circle" [src]="team.teamBackgroundImage">
+      </span>
+      <h2>{{team.teamName}}</h2>
+      <p>{{team.teamDescription}}</p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="members container">
+    <div class="row featurette">
+      <div class="heading text-xs-center col-lg-12 col-md-12 col-sm-12  col-xs-12">
+        <div class="heading-text">
+         <h3><u>Members</u></h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" *ngFor="let member of team.teamMembers">
+        <figure class="figure">
+            <img [src]="member.image" height="90px" alt="..." class="img-rounded">
+            <figcaption class="figure-caption" style="font-size: 70%; text-align: center;">
+                {{member.name}}
+            </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
